@@ -1,0 +1,22 @@
+---
+- name: Common tasks for every playbook
+  import_playbook: boilerplate.yml
+
+- name: Gather facts
+  import_playbook: facts.yml
+  when: reset_nodes | default(True) | bool
+
+- name: Reset node
+  hosts: "{{ node | default('kube_node') }}"
+  roles:
+    - { role: kubespray-defaults, when: "reset_nodes | default(True) | bool" }
+    - { role: remove-node/pre-remove, tags: pre-remove }
+    - { role: remove-node/remove-etcd-node }
+    - { role: reset, tags: reset, when: "reset_nodes | default(True) | bool" }
+
+# Note: Currently cannot remove the first master or etcd
+- name: Post node removal
+  hosts: "{{ node | default('kube_control_plane[1:]:etcd[1:]') }}"
+  roles:
+    - { role: kubespray-defaults, when: "reset_nodes | default(True) | bool" }
+    - { role: remove-node/post-remove, tags: post-remove }
