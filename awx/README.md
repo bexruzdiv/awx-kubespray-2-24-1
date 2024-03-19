@@ -72,3 +72,5 @@ Actually the configuration will be like this
 and you need to change `owner` to `root` as shown in the picture
 
 ![image](https://github.com/bexruzdiv/awx-kubespray-2-24-1/assets/107495220/00cfc743-def5-471b-a07c-e544cd81c5f2)
+
+3. And finally comment your .gitignore file before pushing to the github repository
