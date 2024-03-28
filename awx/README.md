@@ -86,6 +86,10 @@ and you need to change `owner` to `root` as shown in the picture
   - "SSH Private Key" ➝ your private ssh key, if a private key was used
   - "Privilege Escalation Method" ➝ sudo
   - "Privilege Escalation Username" ➝ root
+  - "Save"
+
+![image](https://github.com/bexruzdiv/awx-kubespray-2-24-1/assets/107495220/06d78578-f3f9-464a-a032-538c986a5131)
+
 
 3. Create Inventoty
   - From left menu "Inventories" ➝ Add ➝ Add inventory
@@ -95,4 +99,16 @@ and you need to change `owner` to `root` as shown in the picture
 
 ![image](https://github.com/bexruzdiv/awx-kubespray-2-24-1/assets/107495220/9cbe9e90-d41f-4f1f-a426-40f131beb5da)
 
-4. 
+4. Create hosts
+  -  From left menu "Hosts" ➝ Add
+  -  "Name"  ➝ name for your host
+  -  "Inventory"  ➝ your inventory
+  -  
+![image](https://github.com/bexruzdiv/awx-kubespray-2-24-1/assets/107495220/f6878f83-2765-4141-be05-7e35aa956d77)
+
+4. Create groups in your inventory
+  -  From left menu "Inventories" ➝ your inventory ➝ Groups ➝ Add
+    1. name: `kube_control_plane` and "Save"
+    2. name: `kube_node` and "Save"
+    1. name: `k8s_cluster` and "Save"
+    1. name: `etcd` and "Save"
