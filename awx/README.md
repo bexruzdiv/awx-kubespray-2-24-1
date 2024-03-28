@@ -137,4 +137,6 @@ and you need to change `owner` to `root` as shown in the picture
   -  Variables for kubespray (like: `kube_network_plugin` or `loadbalancer_apiserver` etc... )
   -  "Save" and "Launch"
 
+![image](https://github.com/bexruzdiv/awx-kubespray-2-24-1/assets/107495220/a85a4d6c-35cd-4c02-a0a9-40bec6cc2c45)
+
 
