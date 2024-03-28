@@ -74,3 +74,23 @@ and you need to change `owner` to `root` as shown in the picture
 ![image](https://github.com/bexruzdiv/awx-kubespray-2-24-1/assets/107495220/00cfc743-def5-471b-a07c-e544cd81c5f2)
 
 3. And finally comment your .gitignore file before pushing to the github repository
+
+# How to setting AWX for kubespray
+1. If you need, Create organization in awx 
+2. You need to create credential for connect servers (in my case, i used ssh private key without passwords).
+
+  - From left menu "Credentials" ➝ Add
+  - Name  ➝  name for your crendential name
+  - "Credential Type" ➝ Machine
+  - "Organization" ➝ your organization
+  - "SSH Private Key" ➝ your private ssh key, if a private key was used
+  - "Privilege Escalation Method" ➝ sudo
+  - "Privilege Escalation Username" ➝ root
+
+3. Create Inventoty
+  - From left menu "Inventories" ➝ Add ➝ Add inventory
+  - "Name"  ➝ name for your inventory 
+  - "Organization" ➝ your organization
+  - "Save"
+
+4. 
