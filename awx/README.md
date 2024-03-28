@@ -106,9 +106,13 @@ and you need to change `owner` to `root` as shown in the picture
   -  
 ![image](https://github.com/bexruzdiv/awx-kubespray-2-24-1/assets/107495220/f6878f83-2765-4141-be05-7e35aa956d77)
 
-4. Create groups in your inventory
-  -  From left menu "Inventories" ➝ your inventory ➝ Groups ➝ Add
-    1. name: `kube_control_plane` and "Save"
-    2. name: `kube_node` and "Save"
-    1. name: `k8s_cluster` and "Save"
-    1. name: `etcd` and "Save"
+5. Create groups in your inventory
+    From left menu "Inventories" ➝ your inventory ➝ Groups ➝ Add 
+    1. name: `kube_control_plane` and "Save" ➝ "Hosts"  ➝ "Add"  ➝ "Add existing host" ➝ choose your host for __master__ and "Save"
+    2. name: `kube_node` and "Save" ➝  "Hosts" ➝ "Add"  ➝ "Add existing host" ➝ choose your host for __worker__ and "Save"
+    3. name: `etcd` and "Save"  ➝  "Hosts" ➝ "Add"  ➝ "Add existing host" ➝ choose your host for __etcd__ and "Save"
+    4. name: `k8s_cluster` and "Save" ➝ "Related Groups" ➝ "Add"  ➝ "Add existing group" ➝ chooce "kube_control_plane" and "kube_node" and "Save"
+   
+![image](https://github.com/bexruzdiv/awx-kubespray-2-24-1/assets/107495220/cf63e14d-13cd-4548-a6a3-d08a0b372165)
+
+6. 
