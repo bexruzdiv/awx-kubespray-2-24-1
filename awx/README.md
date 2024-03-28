@@ -115,4 +115,26 @@ and you need to change `owner` to `root` as shown in the picture
    
 ![image](https://github.com/bexruzdiv/awx-kubespray-2-24-1/assets/107495220/cf63e14d-13cd-4548-a6a3-d08a0b372165)
 
-6. 
+6. Create project
+  -  From left menu "Projects"  ➝ Add
+  -  "Name"  ➝  name for your project
+  -  "Organization"  ➝  your organization
+  -  "Source Control Type *"  ➝  "Git"
+  -  "Source Control URL"   ➝  your kubespray url (github, gitlab)
+  -  "Source Control Branch/Tag/Commit"   ➝  your branch
+  -  "Options"    ➝   "Update Revision on Launch" and "Clean"
+
+![image](https://github.com/bexruzdiv/awx-kubespray-2-24-1/assets/107495220/2cfa2129-2f53-46bc-88ba-3b6237ebb658)
+
+7. Create templates
+  -  From left menu "Templates"  ➝ "Add" ➝  "Add job template"
+  -  "Name"  ➝  name for your templates
+  -  "Inventory"  ➝ your inventory
+  -  "Project"  ➝ your Project
+  -  "Execution Environment"  ➝  your exucution environment (image)
+  -  Playbook  ➝  cluster.yml (for create k8s cluster)
+  -  Credentials  ➝  your crendential for access servers
+  -  Variables for kubespray (like: `kube_network_plugin` or `loadbalancer_apiserver` etc... )
+  -  "Save" and "Launch"
+
+
