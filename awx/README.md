@@ -93,4 +93,6 @@ and you need to change `owner` to `root` as shown in the picture
   - "Organization" ➝ your organization
   - "Save"
 
+![image](https://github.com/bexruzdiv/awx-kubespray-2-24-1/assets/107495220/9cbe9e90-d41f-4f1f-a426-40f131beb5da)
+
 4. 
