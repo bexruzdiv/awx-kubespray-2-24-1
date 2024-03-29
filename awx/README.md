@@ -115,6 +115,17 @@ and you need to change `owner` to `root` as shown in the picture
    
 ![image](https://github.com/bexruzdiv/awx-kubespray-2-24-1/assets/107495220/cf63e14d-13cd-4548-a6a3-d08a0b372165)
 
+6. Create excution environment
+  -  First create your own image for awx runner. Download this [GITHUB](https://github.com/bexruzdiv/awx-excuter.git) repository. Change requirements-kubespray.txt values with the kubespray requirements you want to use. And build your image and push to your dockerhub.
+  -  From left menu "Execution Environments"  ➝ Add
+  -  "Name"  ➝  name for your Execution Environments
+  -  Image ➝  your full image name
+  -  "Organization"  ➝  your organization
+  -  "Save"
+
+![image](https://github.com/bexruzdiv/awx-kubespray-2-24-1/assets/107495220/74cd0b8a-15e2-4631-89cb-a55275d31dab)
+
+
 6. Create project
   -  From left menu "Projects"  ➝ Add
   -  "Name"  ➝  name for your project
