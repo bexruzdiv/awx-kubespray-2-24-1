@@ -126,7 +126,7 @@ and you need to change `owner` to `root` as shown in the picture
 ![image](https://github.com/bexruzdiv/awx-kubespray-2-24-1/assets/107495220/74cd0b8a-15e2-4631-89cb-a55275d31dab)
 
 
-6. Create project
+7. Create project
   -  From left menu "Projects"  ➝ Add
   -  "Name"  ➝  name for your project
   -  "Organization"  ➝  your organization
@@ -137,7 +137,7 @@ and you need to change `owner` to `root` as shown in the picture
 
 ![image](https://github.com/bexruzdiv/awx-kubespray-2-24-1/assets/107495220/2cfa2129-2f53-46bc-88ba-3b6237ebb658)
 
-7. Create templates
+8. Create templates
   -  From left menu "Templates"  ➝ "Add" ➝  "Add job template"
   -  "Name"  ➝  name for your templates
   -  "Inventory"  ➝ your inventory
